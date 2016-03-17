@@ -3,8 +3,8 @@
 void main()
 {
 	//建立一个Access工厂  
-	IFactory *sqlserverFactory = new SqlserverFactory();
-	IUser *user = sqlserverFactory->CreateUser();
+	IFactory * sqlserverFactory = new SqlserverFactory();
+	IUser * user = sqlserverFactory->CreateUser();
 	user->Insert(new User());
 	user->GetUser(0);
 
